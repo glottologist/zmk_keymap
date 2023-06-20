@@ -64,6 +64,11 @@
       bindings = <&kp DEL>;
       key-positions = <32 33>;
     };
+
+    top_layer {
+      bindings = <&mo 3>;
+      key-positions = <37 40>;
+    };
   };
 
   macros {
