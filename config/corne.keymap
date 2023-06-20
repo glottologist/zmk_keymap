@@ -32,6 +32,8 @@
 &kp LEFT_CONTROL  &kp Z  &kp X     &kp C  &kp V       &kp B        &kp N  &kp M     &kp COMMA  &kp DOT   &kp FSLH         &kp AT
                                 &kp LGUI  &mo 1  &kp RETURN    &kp SPACE  &mo 2  &kp LEFT_ALT
       >;
+
+      label = "Base";
     };
 
     raise {
