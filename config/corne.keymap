@@ -42,7 +42,7 @@
                                 &kp LGUI  &mo 1  &kp RETURN    &kp SPACE  &mo 2  &kp LEFT_ALT
       >;
 
-      label = "Default";
+      label = "DEF";
     };
 
     LM2 {
@@ -53,7 +53,7 @@
                                                    &kp LEFT_GUI                 &none             &kp RETURN         &kp SPACE      &none      &kp LEFT_ALT
       >;
 
-      label = "SYMBOLS";
+      label = "SYM";
     };
 
     LM3 {
@@ -64,7 +64,7 @@
                                                &none          &none             &none    &none  &none  &none
       >;
 
-      label = "BT & EXTRA";
+      label = "BT&EXT";
     };
   };
 };
