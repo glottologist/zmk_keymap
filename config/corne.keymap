@@ -21,13 +21,16 @@
 
   macros {
   };
- conditional_layers {
-        compatible = "zmk,conditional-layers";
-        both {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
+
+  conditional_layers {
+    compatible = "zmk,conditional-layers";
+
+    both {
+      if-layers = <1 2>;
+      then-layer = <3>;
     };
+  };
+
   keymap {
     compatible = "zmk,keymap";
 
@@ -49,6 +52,8 @@
 &kp CAPSLOCK        &kp CARET    &kp AMPERSAND  &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp UNDERSCORE   &kp PLUS    &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp PIPE      &kp LS(SLASH)
                                                    &kp LEFT_GUI                &trans             &kp RETURN         &kp SPACE      &mo 3      &kp LEFT_ALT
       >;
+
+      label = "Raise";
     };
 
     lower {
@@ -58,6 +63,8 @@
 &bt BT_PRV        &trans        &trans        &trans  &kp LESS_THAN  &kp GREATER_THAN    &trans  &trans  &trans  &trans  &trans  &trans
                                               &trans          &mo 3            &trans    &trans  &trans  &trans
       >;
+
+      label = "Lower";
     };
 
     both {
