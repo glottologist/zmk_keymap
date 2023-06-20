@@ -50,7 +50,7 @@
      &kp TAB           &kp N1           &kp N2           &kp N3                &kp N4                 &kp N5            &kp N6     &kp N7            &kp N8             &kp N9     &kp N0         &kp DELETE
    &kp GRAVE  &kp EXCLAMATION  &kp NON_US_HASH        &kp POUND            &kp DOLLAR            &kp PERCENT         &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE  &kp LS(BACKSLASH)
 &kp CAPSLOCK        &kp CARET    &kp AMPERSAND  &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp UNDERSCORE   &kp PLUS    &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp PIPE      &kp LS(SLASH)
-                                                   &kp LEFT_GUI                &trans             &kp RETURN         &kp SPACE      &mo 3      &kp LEFT_ALT
+                                                   &kp LEFT_GUI                &trans             &kp RETURN         &kp SPACE     &trans      &kp LEFT_ALT
       >;
 
       label = "Raise";
@@ -61,19 +61,10 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3      &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_NXT        &trans        &trans        &trans         &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_PRV        &trans        &trans        &trans  &kp LESS_THAN  &kp GREATER_THAN    &trans  &trans  &trans  &trans  &trans  &trans
-                                              &trans          &mo 3            &trans    &trans  &trans  &trans
+                                              &trans         &trans            &trans    &trans  &trans  &trans
       >;
 
       label = "Lower";
-    };
-
-    both {
-      bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_NXT        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_PRV        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                              &trans        &trans        &trans    &trans  &trans  &trans
-      >;
     };
   };
 };
