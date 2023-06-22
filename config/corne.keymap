@@ -58,10 +58,10 @@
 
     LM3 {
       bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3      &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
-&bt BT_NXT         &none         &none         &none          &none             &none    &none  &none  &none  &none  &none  &none
-&bt BT_PRV         &none         &none         &none  &kp LESS_THAN  &kp GREATER_THAN    &none  &none  &none  &none  &none  &none
-                                               &none          &none             &none    &none  &none  &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3      &bt BT_SEL 4             &none           &none         &none            &none  &none  &none
+&bt BT_NXT         &none         &none         &none          &none             &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
+&bt BT_PRV         &none         &none         &none  &kp LESS_THAN  &kp GREATER_THAN             &none           &none         &none            &none  &none  &none
+                                               &none          &none             &none             &none           &none         &none
       >;
 
       label = "BT&EXT";
