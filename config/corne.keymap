@@ -38,7 +38,7 @@
       bindings = <
  &kp ESC           &kp Q           &kp W               &kp E         &kp R       &kp T        &kp Y              &kp U            &kp I            &kp O               &kp P  &kp BACKSPACE
 &kp HASH  &mt A LEFT_GUI  &mt S LEFT_ALT  &mt D LEFT_CONTROL  &mt F LSHIFT       &kp G        &kp H  &mt J RIGHT_SHIFT  &mt K RS(RCTRL)  &mt L RIGHT_ALT  &mt SEMI RIGHT_GUI    &kp AT_SIGN
-   &none           &kp Z           &kp X               &kp C         &kp V       &kp B        &kp N              &kp M        &kp COMMA          &kp DOT            &kp FSLH          &none
+&kp PIPE           &kp Z           &kp X               &kp C         &kp V       &kp B        &kp N              &kp M        &kp COMMA          &kp DOT            &kp FSLH          &none
                                                        &mo 3         &mo 1  &kp RETURN    &kp SPACE              &mo 2            &mo 4
       >;
 
