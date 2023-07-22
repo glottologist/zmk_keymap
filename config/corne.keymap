@@ -56,7 +56,7 @@
       label = "SYM";
     };
 
-    LM3 {
+    LT3 {
       bindings = <
 &bt BT_CLR        &kp F1        &kp F2        &kp F3         &kp F4            &kp F5            &kp F6          &kp F7        &kp F8           &kp F9  &kp F10  &none
 &bt BT_NXT  &kp CAPSLOCK         &none         &none  &kp LESS_THAN  &kp GREATER_THAN    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW    &none  &none
@@ -67,7 +67,7 @@
       label = "BT&EXT";
     };
 
-    layer_3 {
+    LT4 {
       bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
