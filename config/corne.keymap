@@ -62,10 +62,10 @@
 
     LT2 {
       bindings = <
-  &kp TAB           &kp N1           &kp N2           &kp N3                &kp N4                 &kp N5            &kp N6     &kp N7            &kp N8             &kp N9     &kp N0         &kp DELETE
-&kp GRAVE  &kp EXCLAMATION  &kp NON_US_HASH        &kp POUND            &kp DOLLAR            &kp PERCENT         &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE  &kp LS(BACKSLASH)
- &kp STAR        &kp CARET    &kp AMPERSAND  &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp UNDERSCORE   &kp PLUS    &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp PIPE      &kp LS(SLASH)
-                                                       &mo 3                 &none             &mt ENTER SPACE         &mt DELETE BACKSPACE      &mo 2             &mo 4
+  &kp TAB           &kp N1           &kp N2           &kp N3                &kp N4                 &kp N5                  &kp N6     &kp N7            &kp N8             &kp N9     &kp N0         &kp DELETE
+&kp GRAVE  &kp EXCLAMATION  &kp NON_US_HASH        &kp POUND            &kp DOLLAR            &kp PERCENT               &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE  &kp LS(BACKSLASH)
+ &kp STAR        &kp CARET    &kp AMPERSAND  &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS          &kp UNDERSCORE   &kp PLUS    &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp PIPE      &kp LS(SLASH)
+                                                       &mo 3                 &none        &mt ENTER SPACE    &mt DELETE BACKSPACE      &mo 2             &mo 4
       >;
 
       label = "SYM";
@@ -73,10 +73,10 @@
 
     LT3 {
       bindings = <
-&bt BT_CLR        &kp F1        &kp F2        &kp F3         &kp F4            &kp F5            &kp F6          &kp F7        &kp F8           &kp F9  &kp F10  &none
-&bt BT_NXT  &kp CAPSLOCK         &none         &none  &kp LESS_THAN  &kp GREATER_THAN    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW    &none  &none
-&bt BT_PRV  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3      &bt BT_SEL 4             &none           &none         &none            &none    &none  &none
-                                               &mo 3          &mo 1             &mt ENTER SPACE             &mt DELETE BACKSPACE           &none         &mo 4
+&bt BT_CLR        &kp F1        &kp F2        &kp F3         &kp F4            &kp F5                  &kp F6          &kp F7        &kp F8           &kp F9  &kp F10  &none
+&bt BT_NXT  &kp CAPSLOCK         &none         &none  &kp LESS_THAN  &kp GREATER_THAN          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW    &none  &none
+&bt BT_PRV  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3      &bt BT_SEL 4                   &none           &none         &none            &none    &none  &none
+                                               &mo 3          &mo 1   &mt ENTER SPACE    &mt DELETE BACKSPACE           &none         &mo 4
       >;
 
       label = "BT&EXT";
@@ -84,20 +84,22 @@
 
     LT4 {
       bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &trans                  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans   &mo 1  &mt ENTER SPACE    &mt DELETE BACKSPACE   &mo 2   &mo 4
       >;
     };
 
-    layer_4 {
+    LT5 {
       bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                         &mo 3   &mo 1  &mt ENTER SPACE&    &mt DELETE BACKSPACE   &mo 2  &trans
+&trans  &trans  &trans  &trans  &trans           &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans           &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                         &mo 3   &mo 1  &mt ENTER SPACE    &mt DELETE BACKSPACE   &mo 2  &trans
       >;
+
+      label = "UPP";
     };
 
     layer_5 {
