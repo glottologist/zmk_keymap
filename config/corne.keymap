@@ -25,9 +25,24 @@
   conditional_layers {
     compatible = "zmk,conditional-layers";
 
-    both {
+    inner-chord {
       if-layers = <1 2>;
-      then-layer = <3>;
+      then-layer = <5>;
+    };
+
+    outer-chord {
+      if-layers = <3 4>;
+      then-layer = <6>;
+    };
+
+    left-chord {
+      if-layers = <3 2>;
+      then-layer = <7>;
+    };
+
+    right-chord {
+      if-layers = <1 4>;
+      then-layer = <8>;
     };
   };
 
@@ -50,7 +65,7 @@
   &kp TAB           &kp N1           &kp N2           &kp N3                &kp N4                 &kp N5            &kp N6     &kp N7            &kp N8             &kp N9     &kp N0         &kp DELETE
 &kp GRAVE  &kp EXCLAMATION  &kp NON_US_HASH        &kp POUND            &kp DOLLAR            &kp PERCENT         &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE  &kp LS(BACKSLASH)
  &kp STAR        &kp CARET    &kp AMPERSAND  &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp UNDERSCORE   &kp PLUS    &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp PIPE      &kp LS(SLASH)
-                                                       &mo 3                 &none             &kp RETURN         &kp SPACE      &mo 2             &mo 4
+                                                       &mo 3                 &none             &mt ENTER SPACE         &mt DELETE BACKSPACE      &mo 2             &mo 4
       >;
 
       label = "SYM";
@@ -61,7 +76,7 @@
 &bt BT_CLR        &kp F1        &kp F2        &kp F3         &kp F4            &kp F5            &kp F6          &kp F7        &kp F8           &kp F9  &kp F10  &none
 &bt BT_NXT  &kp CAPSLOCK         &none         &none  &kp LESS_THAN  &kp GREATER_THAN    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW    &none  &none
 &bt BT_PRV  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3      &bt BT_SEL 4             &none           &none         &none            &none    &none  &none
-                                               &mo 3          &mo 1             &none             &none           &none         &mo 4
+                                               &mo 3          &mo 1             &mt ENTER SPACE             &mt DELETE BACKSPACE           &none         &mo 4
       >;
 
       label = "BT&EXT";
@@ -72,7 +87,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans   &mo 1  &trans    &trans   &mo 2   &mo 4
+                        &trans   &mo 1  &mt ENTER SPACE    &mt DELETE BACKSPACE   &mo 2   &mo 4
       >;
     };
 
@@ -81,7 +96,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                         &mo 3   &mo 1  &trans    &trans   &mo 2  &trans
+                         &mo 3   &mo 1  &mt ENTER SPACE&    &mt DELETE BACKSPACE   &mo 2  &trans
       >;
     };
 
