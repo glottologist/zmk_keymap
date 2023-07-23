@@ -9,6 +9,41 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+  behaviors {
+  };
+
+  combos {
+    compatible = "zmk,combos";
+  };
+
+  macros {
+  };
+
+  conditional_layers {
+    compatible = "zmk,conditional-layers";
+
+    inner-chord {
+      if-layers = <1 2>;
+      then-layer = <5>;
+    };
+
+    outer-chord {
+      if-layers = <3 4>;
+      then-layer = <6>;
+    };
+
+    left-chord {
+      if-layers = <3 2>;
+      then-layer = <7>;
+    };
+
+    right-chord {
+      if-layers = <1 4>;
+      then-layer = <8>;
+    };
+  };
+
+{
     keymap {
         compatible = "zmk,keymap";
 
