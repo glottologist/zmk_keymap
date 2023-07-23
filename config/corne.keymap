@@ -78,16 +78,18 @@
                         &trans  &trans  &trans    &trans   &none  &trans
       >;
 
-      label = "BT&EXT";
+      label = "FN";
     };
 
     LT4 {
       bindings = <
-&trans  &trans  &trans  &trans  &trans           &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans           &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans           &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans   &mo 1  &mt ENTER SPACE    &mt DELETE BACKSPACE   &mo 2   &mo 4
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
       >;
+
+      label = "MCR";
     };
 
     LT5 {
