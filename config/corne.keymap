@@ -123,7 +123,7 @@
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
-            label = "CL4";
+            label = "CL3";
         };
 
         CL4 {
