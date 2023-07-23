@@ -62,10 +62,10 @@
 
     LT2 {
       bindings = <
-&trans     &kp NUMBER_1           &kp N2           &kp N3                &kp N4                 &kp N5            &kp N6     &kp N7            &kp N8             &kp N9     &kp N0  &trans
-&trans  &kp EXCLAMATION  &kp NON_US_HASH        &kp POUND            &kp DOLLAR            &kp PERCENT         &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp TILDE  &trans
-&trans        &kp CARET    &kp AMPERSAND  &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp UNDERSCORE   &kp PLUS    &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp PIPE  &trans
-                                                   &trans                &trans                 &trans            &trans     &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
       >;
 
       label = "SYM";
