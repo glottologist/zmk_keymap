@@ -50,10 +50,10 @@
 
     LT1 {
       bindings = <
-       &mt ESC TAB           &kp Q           &kp W               &kp E         &kp R            &kp T                   &kp Y              &kp U                       &kp I                         &kp O               &kp P  &mt RIGHT_BRACKET LEFT_BRACKET
-         &kp GRAVE  &mt A LEFT_GUI  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LSHIFT F            &kp G                   &kp H  &mt RIGHT_SHIFT J         &mt RIGHT_CONTROL K               &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI                          &kp AT
-&mt PIPE BACKSLASH           &kp Z           &kp X               &kp C         &kp V            &kp B                   &kp N              &kp M  &mt LEFT_PARENTHESIS COMMA  &mt RIGHT_PARENTHESIS PERIOD     &kp NON_US_HASH                       &kp SLASH
-                                                                 &mo 3         &mo 1  &mt ENTER SPACE    &mt DELETE BACKSPACE              &mo 2                       &mo 4
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
       >;
 
       label = "DEF";
