@@ -111,7 +111,7 @@
                         &trans  &trans  &trans    &trans  &trans  &trans
       >;
 
-      label = "INR_CRD";
+      label = "BLE";
     };
 
     CL2 {
