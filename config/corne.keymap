@@ -80,7 +80,7 @@
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
-            label = "MCR";
+            label = "INT";
         };
 
         LT5 {
