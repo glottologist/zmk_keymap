@@ -18,6 +18,15 @@
         };
     };
 
+    macros {
+        TMUX_SH: TMUX_SH {
+            compatible = "zmk,behavior-macro";
+            label = "TMUX_SH";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp SPACE &kp LEFT_SHIFT &kp PIPE>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -63,13 +72,13 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &TMUX_SH    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans    &trans  &trans  &trans
             >;
 
-            label = "FN";
+            label = "MAC";
         };
 
         LT4 {
