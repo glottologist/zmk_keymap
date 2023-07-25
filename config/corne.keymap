@@ -38,10 +38,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-    &mt ESCAPE TAB  &kp Q  &kp W         &kp E             &kp R          &kp T                   &kp Y              &kp U          &kp I    &kp O          &kp P          &mt RIGHT_BRACKET LEFT_BRACKET
-   &mt MINUS GRAVE  &kp A  &kp S   &mt LCTRL D  &mt LEFT_SHIFT F          &kp G                   &kp H  &mt RIGHT_SHIFT J    &mt RCTRL K    &kp L  &kp SEMICOLON  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
-&mt PIPE BACKSLASH  &kp Z  &kp X         &kp C             &kp V          &kp B                   &kp N              &kp M      &kp COMMA  &kp DOT       &kp NUHS                            &mt AT SLASH
-                                  &kp LEFT_GUI             &mo 1  &mt RET SPACE    &mt DELETE BACKSPACE              &mo 2  &kp RIGHT_ALT
+      &mt ESCAPE TAB  &kp Q  &kp W         &kp E             &kp R          &kp T                   &kp Y              &kp U          &kp I    &kp O          &kp P          &mt RIGHT_BRACKET LEFT_BRACKET
+     &mt MINUS GRAVE  &kp A  &kp S   &mt LCTRL D  &mt LEFT_SHIFT F          &kp G                   &kp H  &mt RIGHT_SHIFT J    &mt RCTRL K    &kp L  &kp SEMICOLON  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
+&kp NON_US_BACKSLASH  &kp Z  &kp X         &kp C             &kp V          &kp B                   &kp N              &kp M      &kp COMMA  &kp DOT       &kp NUHS                            &mt AT SLASH
+                                    &kp LEFT_GUI             &mo 1  &mt RET SPACE    &mt DELETE BACKSPACE              &mo 2  &kp RIGHT_ALT
             >;
 
             label = "DEF";
