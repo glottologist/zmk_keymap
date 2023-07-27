@@ -57,7 +57,7 @@
             bindings = <
        &trans  &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &mt F4 NUMBER_4  &mt F5 NUMBER_5    &mt F6 NUMBER_6  &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &mt F10 NUMBER_0  &trans
   &kp PAGE_UP           &trans           &trans           &trans           &trans           &trans     &kp LEFT_ARROW         &kp DOWN     &kp UP_ARROW        &kp RIGHT            &trans  &trans
-&kp PAGE_DOWN           &trans           &trans           &trans           &trans           &trans             &trans           &trans           &trans           &trans            &trans  &trans
+&kp PAGE_DOWN           &trans           &trans           &trans           &trans           &trans          &kp MINUS        &kp EQUAL           &trans           &trans            &trans  &trans
                                                           &trans           &trans           &trans             &trans           &trans           &trans
             >;
 
