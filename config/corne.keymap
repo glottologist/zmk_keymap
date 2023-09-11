@@ -38,10 +38,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-      &mt ESCAPE TAB  &kp Q  &kp W         &kp E             &kp R             &kp T                   &kp Y              &kp U         &kp I    &kp O                         &kp P          &mt RIGHT_BRACKET LEFT_BRACKET
-     &mt MINUS GRAVE  &kp A  &kp S   &mt LCTRL D  &mt LEFT_SHIFT F             &kp G                   &kp H  &mt RIGHT_SHIFT J   &mt RCTRL K    &kp L                 &kp SEMICOLON  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
-&kp NON_US_BACKSLASH  &kp Z  &kp X         &kp C             &kp V             &kp B                   &kp N              &kp M     &kp COMMA  &kp DOT  &mt SINGLE_QUOTE NON_US_HASH                            &mt AT SLASH
-                                    &kp LEFT_GUI             &mo 1  &mt DELETE SPACE    &mt BACKSPACE RETURN              &mo 2  &kp LEFT_ALT
+&kp ESCAPE        &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y      &kp U  &kp I         &kp O    &kp P                         &kp LEFT_PARENTHESIS
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F  &kp G        &kp H      &kp J  &kp K         &kp L    &kp SEMICOLON                 &kp LEFT_BRACKET
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N      &kp M  &kp COMMA     &kp DOT  &mt SINGLE_QUOTE NON_US_HASH  &kp SLASH
+                                &kp LEFT_GUI  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp LEFT_ALT
             >;
 
             label = "DEF";
@@ -55,10 +55,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-       &trans  &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &mt F4 NUMBER_4  &mt F5 NUMBER_5    &mt F6 NUMBER_6  &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &mt F10 NUMBER_0  &mt RIGHT_BRACE LEFT_BRACE
-  &kp PAGE_UP           &trans           &trans           &trans           &trans           &trans             &trans           &trans           &trans           &trans            &trans                      &trans
-&kp PAGE_DOWN           &trans           &trans           &trans           &trans           &trans          &kp MINUS        &kp EQUAL           &trans           &trans            &trans                      &trans
-                                                          &trans           &trans           &trans             &trans           &trans           &trans
+&kp TAB        &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &mt F4 NUMBER_4  &mt F5 NUMBER_5    &mt F6 NUMBER_6  &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &mt F10 NUMBER_0  &kp RIGHT_PARENTHESIS
+&kp PAGE_UP    &trans           &trans           &trans           &trans           &trans             &trans           &trans           &trans           &trans           &kp AT_SIGN       &kp RIGHT_BRACKET
+&kp PAGE_DOWN  &trans           &trans           &trans           &trans           &trans             &kp MINUS        &kp EQUAL        &trans           &trans           &trans            &trans
+                                                 &trans           &trans           &kp DELETE         &kp BACKSPACE    &trans           &trans
             >;
 
             label = "SYM";
@@ -72,10 +72,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans      &trans    &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &TMUX_SH    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans      &trans    &trans  &trans     &trans  &trans  &trans
-                        &trans  &trans    &trans      &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans         &trans    &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &TMUX_SH      &kp LEFT       &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans         &trans    &trans  &trans     &trans  &trans
+                        &trans  &trans  &kp DELETE    &kp BACKSPACE  &trans    &trans
             >;
 
             label = "MAC";
@@ -83,10 +83,10 @@
 
         LT4 {
             bindings = <
-&bt BT_CLR   &kp INT1   &kp INT2   &kp INT3   &kp INT4   &kp INT5     &kp INT6   &kp INT7   &kp INT8   &kp INT9  &trans  &trans
+&bt BT_CLR  &kp INT1   &kp INT2   &kp INT3   &kp INT4   &kp INT5     &kp INT6   &kp INT7   &kp INT8   &kp INT9   &trans  &trans
 &bt BT_NXT  &kp LANG1  &kp LANG2  &kp LANG3  &kp LANG4  &kp LANG5    &kp LANG6  &kp LANG7  &kp LANG8  &kp LANG9  &trans  &trans
-&bt BT_PRV     &trans     &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans  &trans  &trans
-                                     &trans     &trans     &trans       &trans     &trans     &trans
+&bt BT_PRV  &trans     &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+                                  &trans     &trans     &trans       &trans     &trans     &trans
             >;
 
             label = "INT";
