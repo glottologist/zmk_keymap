@@ -83,9 +83,9 @@
 
         LT4 {
             bindings = <
-&bt BT_CLR  &kp INT1   &kp INT2   &kp INT3   &kp INT4   &kp INT5     &kp INT6   &kp INT7   &kp INT8   &kp INT9   &trans  &trans
-&bt BT_NXT  &kp LANG1  &kp LANG2  &kp LANG3  &kp LANG4  &kp LANG5    &kp LANG6  &kp LANG7  &kp LANG8  &kp LANG9  &trans  &trans
-&bt BT_PRV  &trans     &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+&bt BT_CLR  &kp INT1   &kp INT2   &kp INT3   &kp INT4   &kp INT5     &kp INT6   &kp INT7   &kp INT8   &kp INT9   &kp C_BRI_UP     &kp C_BRIGHTNESS_DEC
+&bt BT_NXT  &kp LANG1  &kp LANG2  &kp LANG3  &kp LANG4  &kp LANG5    &kp LANG6  &kp LANG7  &kp LANG8  &kp LANG9  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN
+&bt BT_PRV  &trans     &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &kp K_MUTE       &kp K_MUTE2
                                   &trans     &trans     &trans       &trans     &trans     &trans
             >;
 
