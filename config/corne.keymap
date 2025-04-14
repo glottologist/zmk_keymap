@@ -38,10 +38,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE        &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y          &kp U  &kp I         &kp O    &kp P                         &kp LEFT_PARENTHESIS
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F  &kp G        &kp H          &kp J  &kp K         &kp L    &kp SEMICOLON                 &kp LEFT_BRACKET
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N          &kp M  &kp COMMA     &kp DOT  &mt SINGLE_QUOTE NON_US_HASH  &kp SLASH
-                                &kp LEFT_GUI  &mo 1  &kp SPACE    &kp BACKSPACE  &mo 2  &kp LEFT_ALT
+&kp ESCAPE        &kp Q           &kp W           &kp E         &kp R             &kp T        &kp Y          &kp U              &kp I         &kp O            &kp P                         &kp LEFT_PARENTHESIS
+&kp LEFT_SHIFT    &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D   &mt LEFT_SHIFT F  &mt ESC G    &mt ESC H      &mt RIGHT_SHIFT J  &mt RCTRL K   &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON       &kp LEFT_BRACKET
+&kp LEFT_CONTROL  &kp Z           &kp X           &kp C         &kp V             &kp B        &kp N          &kp M              &kp COMMA     &kp DOT          &mt SINGLE_QUOTE NON_US_HASH  &kp SLASH
+                                                  &kp LEFT_GUI  &mo 1             &kp SPACE    &kp BACKSPACE  &mo 2              &kp LEFT_ALT
             >;
 
             label = "DEF";
@@ -55,10 +55,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB  &kp NUMBER_1          &kp NUMBER_2       &kp NUMBER_3     &kp NUMBER_4  &kp N5                  &kp NUMBER_6  &kp N7        &kp N8     &kp N9         &kp N0            &kp RIGHT_PARENTHESIS
-&trans   &kp EXCLAMATION       &kp DOUBLE_QUOTES  &kp NON_US_HASH  &kp DOLLAR    &kp PERCENT             &kp PLUS      &kp KP_EQUAL  &kp ASTRK  &kp CARET      &kp SINGLE_QUOTE  &kp RIGHT_BRACKET
-&trans   &kp NON_US_BACKSLASH  &kp TILDE          &kp GRAVE        &kp QUESTION  &kp NON_US_BACKSLASH    &kp KP_MINUS  &kp UNDER     &kp AT     &kp LESS_THAN  &kp GREATER_THAN  &kp NON_US_BACKSLASH
-                                                  &trans           &trans        &kp DELETE              &kp ENTER     &trans        &trans
+&kp TAB  &kp NUMBER_1              &kp NUMBER_2                &kp NUMBER_3           &kp NUMBER_4           &kp N5                  &kp NUMBER_6  &kp N7                    &kp N8           &kp N9               &kp N0                      &kp RIGHT_PARENTHESIS
+&trans   &mt LEFT_GUI EXCLAMATION  &mt LEFT_ALT DOUBLE_QUOTES  &mt LCTRL NON_US_HASH  &mt LEFT_SHIFT DOLLAR  &mt ESC PERCENT         &mt ESC PLUS  &mt RIGHT_SHIFT KP_EQUAL  &mt RCTRL ASTRK  &mt RIGHT_ALT CARET  &mt RIGHT_GUI SINGLE_QUOTE  &kp RIGHT_BRACKET
+&trans   &kp NON_US_BACKSLASH      &kp TILDE                   &kp GRAVE              &kp QUESTION           &kp NON_US_BACKSLASH    &kp KP_MINUS  &kp UNDER                 &kp AT           &kp LESS_THAN        &kp GREATER_THAN            &kp NON_US_BACKSLASH
+                                                               &trans                 &trans                 &kp DELETE              &kp ENTER     &trans                    &trans
             >;
 
             label = "SYM";
