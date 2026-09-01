@@ -2,7 +2,7 @@
 /modules
 /zephyr
 /zmk
-/build
+/build/
 /result
 /result-*
 /agents/

@@ -9,15 +9,15 @@ default:
 build name="grace":
     nix build -L .#{{name}} --out-link result-{{name}}
     mkdir -p build
-    cp -L result-{{name}}/zmk_left.uf2 build/{{name}}_left.uf2
-    cp -L result-{{name}}/zmk_right.uf2 build/{{name}}_right.uf2
+    install -D -m 0644 result-{{name}}/zmk_left.uf2 build/{{name}}_left.uf2
+    install -D -m 0644 result-{{name}}/zmk_right.uf2 build/{{name}}_right.uf2
     ls -l build/{{name}}_left.uf2 build/{{name}}_right.uf2
 
 # Build all three boards plus settings reset
 all:
     nix build -L .#all --out-link result
     mkdir -p build
-    cp -L result/*.uf2 build/
+    for f in result/*.uf2; do install -D -m 0644 "$f" "build/$(basename "$f")"; done
     ls -l build/
 
 # Rebuild, then flash both halves (double-tap reset when prompted)
@@ -28,7 +28,7 @@ flash name="grace": (build name)
 reset:
     nix build -L .#reset --out-link result-reset
     mkdir -p build
-    cp -L result-reset/zmk.uf2 build/settings_reset.uf2
+    install -D -m 0644 result-reset/zmk.uf2 build/settings_reset.uf2
     ls -l build/settings_reset.uf2
 
 # Copy the shared keymap so this board can diverge
