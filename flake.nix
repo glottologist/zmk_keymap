@@ -97,8 +97,12 @@
   in {
     packages = forAllSystems mkPackages;
 
-    devShells = forAllSystems (system: {
-      default = zmk-nix.devShells.${system}.default;
+    devShells = forAllSystems (system: let
+      pkgs = nixpkgs.legacyPackages.${system};
+    in {
+      default = zmk-nix.devShells.${system}.default.override {
+        extraPackages = [ pkgs.just ];
+      };
     });
   };
 }
