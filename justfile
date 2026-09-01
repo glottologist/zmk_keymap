@@ -5,20 +5,25 @@
 default:
     @just --list
 
-# Build left+right UF2s into build/
+# Build UF2s into build/. Name: grace | iris | valentina | all
 build name="grace":
-    nix build -L .#{{name}} --out-link result-{{name}}
+    #!/usr/bin/env bash
+    set -euo pipefail
     mkdir -p build
+    if [ "{{name}}" = "all" ]; then
+      nix build -L .#all --out-link result
+      for f in result/*.uf2; do install -D -m 0644 "$f" "build/$(basename "$f")"; done
+      ls -l build/
+      exit 0
+    fi
+    nix build -L .#{{name}} --out-link result-{{name}}
     install -D -m 0644 result-{{name}}/zmk_left.uf2 build/{{name}}_left.uf2
     install -D -m 0644 result-{{name}}/zmk_right.uf2 build/{{name}}_right.uf2
     ls -l build/{{name}}_left.uf2 build/{{name}}_right.uf2
 
-# Build all three boards plus settings reset
+# Same as `just build all`
 all:
-    nix build -L .#all --out-link result
-    mkdir -p build
-    for f in result/*.uf2; do install -D -m 0644 "$f" "build/$(basename "$f")"; done
-    ls -l build/
+    just build all
 
 # Rebuild, then flash both halves (double-tap reset when prompted)
 flash name="grace": (build name)

@@ -31,10 +31,10 @@ just watch grace
 | Command | What it does |
 |---|---|
 | `just build grace` | left+right UF2s → `build/` |
+| `just build all` | Grace, Iris, Valentina, plus settings reset |
 | `just flash iris` | rebuild, then flash both halves |
 | `just watch valentina` | rebuild when `config/` changes |
 | `just overlay iris` | give Iris its own keymap copy |
-| `just all` | all three boards plus settings reset |
 | `just reset` | settings-reset UF2 → `build/settings_reset.uf2` |
 | `just update` | bump ZMK / west and `zephyrDepsHash` |
 
