@@ -18,7 +18,7 @@
     ];
 
     # Bumped by `nix run .#update`
-    zephyrDepsHash = "sha256-777sDty25V5VbWgXjYKpy1NEW/rWJEihU7DRdqfk30I=";
+    zephyrDepsHash = "";
 
     keyboards = [
       { name = "grace"; displayName = "Grace"; }
